@@ -1,0 +1,204 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Martin Beroiz}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  Center for Gravitational Wave Astronomy \\
+  \href{http://www.utb.edu/}{University of Texas Rio Grande Valley} \\
+  One West University Blvd, TX 78520
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (956) 203-1958 \\
+%    Fax: &  (919) 962-5678 \\
+    Email: & \href{mailto:martinberoiz@gmail.com}{\tt martinberoiz@gmail.com} \\
+    Homepage: & \href{http://www.martinberoiz.org}{\tt http://www.martinberoiz.org} \\
+    GitHub: & \href{https://github.com/martinberoiz}{\tt https://github.com/martinberoiz}
+  \end{tabular}
+\end{minipage}
+
+
+%\section*{Personal}
+
+%\begin{itemize}
+%\item Born on March 11, 1981, in Argentina.
+%\item Home Address: 205 W Madison St., Apt 12. Brownsville, TX (78520).
+%\end{itemize}
+
+
+\section*{Education}
+
+\begin{itemize}
+  \item B.S. Physics, National Cordoba University (Argentina), 2007.
+  \item M.S. Physics, University of Texas at Brownsville, 2010.
+  \item PhD in Physics, University of Texas at San Antonio, 2017
+\end{itemize}
+
+
+\section*{Technical Skills}
+
+\begin{itemize}
+\item C, C++, Python, Objective-C, Bash Scripting, Fortran.
+\item HTML, CSS, Javascript, Django, Apache, SQL databases.
+\item Linux/OS X (Cocoa API) development.
+\item OpenGL, PGPLOT, Gnuplot, Mathematica, Matlab, Maple.
+\item SVN and Git version control.
+\end{itemize}
+
+
+\section*{Algorithms developed}
+\begin{itemize}
+\item \href{https://github.com/toros-astro/winnow}{Astronomy broker website:} A Django website to coordinate the assignment of observational targets for a night of observation between different observatories.
+\item \href{https://github.com/toros-astro/astroalign}{Astroalign:} A Python module for the alignment of two stellar images without World Coordinate System information.
+\item \href{https://github.com/toros-astro/ois}{OIS (Optimal Image Subtraction):} A Python module to find transient events on stellar images. Uses modern Image Difference Analysis techniques.
+\item Software pipeline for reduction and analysis of astronomical images. Algorithms developed: Optimal Image Differencing and Machine Learning classifier. (Python, Django web app)
+\item Bayesian analysis to estimate the influence of calibration errors on LIGO gravitational wave data. (C++)
+\item Spectral Method modeling algorithm to numerically solve a 2D helically-reduced wave equation on different geometries with mixed boundary conditions (Fortran algorithms added to a pre existing repository of spectral method routines, SVN, Mathematica). 
+\item Numerical integrator of time-like geodesics (light paths) around a rotating black hole. 3D representation of the geodesic using OpenGL in an interactive OS X GUI. (C, Objective-C, OpenGL)
+\item Prototype algorithm for a real-time radio pulse detection, searching for ``dispersion measure'' signature in transient astronomical signals. (C, PGPLOT, FFTW, OpenMP)
+\end{itemize}
+
+
+\section*{Work experience}
+\begin{itemize}
+\item Assistant Research Scientist for the Center for Gravitational Wave Astronomy, University of Texas Rio Grande Valley. Oct 2017.
+\item System Administrator for the Department of Physics and Astronomy, University of Texas at Brownsville. Fall 2015
+\item System Administrator Assistant for the Department of Physics and Astronomy, University of Texas at Brownsville. 2013- Spring 2015
+% \item Member of the \href{http://wiki.phys.utb.edu/index.php/PhysicsComputingGroup}{Physics Computing Group} at University of Texas at Brownsville.
+\end{itemize}
+
+\section*{Publications}
+
+\begin{itemize}
+\item \href{http://doi.org/10.1093/mnras/stz3634}{ \bf TOROS Optical follow-up of the Advanced LIGO-VIRGO O2 second observational campaign}. (2019) Rodolfo Artola et al. \emph{Monthly Notices of the Royal Astronomical Society (MNRAS)} January 3, 2020.
+\item \href{https://www.sciencedirect.com/science/article/pii/S2213133718300982}{\bf Machine Learning on Difference Image Analysis: A comparison of methods for transient detection}. (2019) Bruno Sanchez et al. {\it Astronomy and Computing} Volume 28, July 2019, 100284.
+\item \href{https://arxiv.org/abs/1710.05844}{\bf Observations of the first electromagnetic counterpart to a gravitational wave source by the TOROS collaboration} (2017) M.C. Díaz et al. {\it The Astrophysical Journal Letters} Volume 848, Number 2.
+\item \href{https://arxiv.org/abs/1701.05566}{\bf Corral framework: Trustworthy and fully functional data intensive parallel astronomical pipelines} (2017) Juan B. Cabral, Bruno Sanchez, Martin Beroiz, Mariano Dominguez, Marcelo Lares, Sebastian Gurovich, Pablo Granitto; {\it Astronomy and Computing}, Volume 20, 140-154.
+\item \href{http://adsabs.harvard.edu/abs/2016ApJ...828L..16D}{\bf GW150914: First search for the electromagnetic counterpart of a gravitational-wave event by the TOROS collaboration} (2016). Mario C. Diaz et al; {\it The Astrophysical Journal Letters}, Volume 828, Issue 2, article id. L16, 6 pp.
+\item \href{http://adsabs.harvard.edu/abs/2016ApJ...826L..13A}{\bf Localization and broadband follow-up of the gravitational-wave transient GW150914} (2016). B. P. Abbott et al. {\it The Astrophysical Journal Letters}, Volume 826, Issue 1, article id. L13, pp
+\item \href{http://www.math.unm.edu/~lau/DMS1216866/tauFluids_BHLP.pdf}{\bf Multidomain, sparse, spectral-tau method for helically symmetric flow} (2014). M Beroiz, T Hagstrom, SR Lau, RH Price; {\it Computers and Fluids}  (2014), pp. 250-265.
+\item \href{http://iopscience.iop.org/1538-3881/147/5/100}{\bf Bright microwave pulses from PSR B0531+21 observed with a prototype transient survey receiver} April 2014. J. Andrew O'Dea, F. A. Jenet, Tsan-Huei Cheng, Chau M. Buu, Martin Beroiz, Sami W. Asmar, and J. W. Armstrong; {\it Astronomical Journal}, 147, 100.
+\item \href{http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5555950}{\bf A Prototype Radio Transient Survey Instrument for Piggyback Deep Space Network Tracking}, May 2011. Chau M. Buu, Fredrick A. Jenet, John W. Armstrong, Sami W. Asmar, Martin Beroiz, Tsan-Huei Cheng, and J. Andrew O'Dea; {\it Proceedings of the IEEE} Volume 99, Number 5.
+\item \href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.76.024012}{\bf Gravitational instability of static spherically symmetric Einstein-Gauss-Bonnet black holes in five and six dimensions}, 2007. M. Beroiz, G. Dotti y R.J. Gleiser, {\it Physical Review D} 76, 024012 hep-th/0703074.
+\end{itemize}
+
+
+\section*{Scientific Meetings and Conferences}
+
+\begin{itemize}
+\item \href{http://meetings.aps.org/Meeting/APR19/Session/Q16.7}{Speaker at the APS April Meeting 2019}, abstract Q16.00007. "Gravitational-Wave Optical Counterpart Detection Methods for the TOROS Campaign During LVC O2 Observation Run". Denver, Colorado. April 2019.
+\item Building Astronomy in Texas Symposium 2019 (BAT2019). Dallas, Texas. January 26- 27, 2019.
+\item \href{https://jsi.astro.umd.edu/conferences/2018-jsi-workshop/workshop-home-page}{Joint Space-Science Institute Gravitational Wave Physics and Astronomy Workshop 2018}. Poster presentation: ``TOROS optical follow-up during the LVC O2 observational campaign''. College Park, Maryland, December 1-4, 2018.
+\item \href{http://adsabs.harvard.edu/abs/2016APS..APRR14005B}{Speaker at the APS April Meeting 2016}, abstract R14.005. "Results of optical follow-up observations of advanced LIGO triggers from O1 in the southern hemisphere". South Lake City, Utah. April 2016.
+\item \href{https://conference.scipy.org/scipy2014/schedule/presentation/1730/}{SciPy Conference 2014. Speaker at Mini Symposium in Astronomy}. "Transient detection and image analysis pipeline for TOROS project". Austin, Texas. July 2014.
+\item Advances and Challenges in Computational General Relativity, Brown University, Providence, RI. May 20-22, 2011.
+\item Poster presentation 215th American Astronomical Society (AAS) Meeting, Washington DC, January 3-7, 2010 ``The X-ray Emission of SN1978K: Still Here After All These Years''  - Eric M. Schlegel, M. Beroiz.
+\item Poster presentation 215th American Astronomical Society (AAS) Meeting, Washington DC, January 3-7, 2010 ``Current Results at PALFA Pulsar Survey at Arecibo Observatory'' - M. Beroiz, K. Stovall, F. Jenet, J. Cordes, D. Lorimer, D. Backer, PALFALFA Consortium.
+\item Summer Provost Research Program at UTSA, 2009. Research on X-ray spectrum of Super Nova 1978K and Poster Presentation.
+\item UTB Summer School in Gravitational Wave Astronomy at South Padre Island TX, June 2008.
+\item Grav07, La Falda (Cordoba), Argentina. November 5-7, 2007.
+\item Poster Presentation at 92nd AFA (Physics Association Argentina) Annual Meeting, Salta, Argentina, September 24-27, 2007.
+\end{itemize}
+
+\section*{Teaching Experience}
+
+\begin{itemize}
+\item Lab Assistant for the Dept. Physics UT Rio Grande Valley - Aug 2015 - Aug 2017.
+\item Teacher Assistant  - Thermodynamics. University of Texas at Brownsville, Aug-Dec 2009.
+\item Lab Assistant for Dept. Physics, University of Texas at Brownsville. Jan-May 20014.
+\item Teacher Assistant for Electrodynamics, University of Texas at Brownsville. Aug-Dec 20014.
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
+
