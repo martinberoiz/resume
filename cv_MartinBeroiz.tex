@@ -115,42 +115,44 @@
   \item PhD in Physics, University of Texas at San Antonio, 2017
 \end{itemize}
 
-
+ 
 \section*{Technical Skills}
 
 \begin{itemize}
-\item C, C++, Python, Objective-C, Bash Scripting, Fortran.
-\item HTML, CSS, Javascript, Django, Apache, SQL databases.
-\item Linux/OS X (Cocoa API) development.
-\item OpenGL, PGPLOT, Gnuplot, Mathematica, Matlab, Maple.
-\item SVN and Git version control.
+\item {\bf Languages:} C, C++, Python, Objective-C, Bash Scripting, Fortran.
+\item {\bf Web Development:} HTML, CSS, Javascript, Django, Apache, SQL databases.
+\item {\bf Operating Systems:} Linux servers, systemd background processes. OS X (Cocoa API) XCode development, OpenGL.
+\item {\bf Dev Tools:} SVN and Git version control. Continuous Integration testing with Travis-CI, Tox, Pytest. Sphinx Documentation.
+\item {\bf Programs:} Mathematica, Matlab, Maple.
 \end{itemize}
 
 
 \section*{Algorithms developed}
 \begin{itemize}
-\item \href{https://github.com/toros-astro/winnow}{Astronomy broker website:} A Django website to coordinate the assignment of observational targets for a night of observation between different observatories.
-\item \href{https://github.com/toros-astro/astroalign}{Astroalign:} A Python module for the alignment of two stellar images without World Coordinate System information.
-\item \href{https://github.com/toros-astro/ois}{OIS (Optimal Image Subtraction):} A Python module to find transient events on stellar images. Uses modern Image Difference Analysis techniques.
-\item Software pipeline for reduction and analysis of astronomical images. Algorithms developed: Optimal Image Differencing and Machine Learning classifier. (Python, Django web app)
-\item Bayesian analysis to estimate the influence of calibration errors on LIGO gravitational wave data. (C++)
-\item Spectral Method modeling algorithm to numerically solve a 2D helically-reduced wave equation on different geometries with mixed boundary conditions (Fortran algorithms added to a pre existing repository of spectral method routines, SVN, Mathematica). 
-\item Numerical integrator of time-like geodesics (light paths) around a rotating black hole. 3D representation of the geodesic using OpenGL in an interactive OS X GUI. (C, Objective-C, OpenGL)
-\item Prototype algorithm for a real-time radio pulse detection, searching for ``dispersion measure'' signature in transient astronomical signals. (C, PGPLOT, FFTW, OpenMP)
+\item {\bf LVC-GCN:} (Private GitHub repository) An alert system to receive, process, and disseminate Gravitational Wave GCNs from the LVK Collaboration. The selected targets of observation are relayed to the TOROS broker website and alerted to members through email and Slack notifications (systemd, Python, SQL, Secret Keys Management).
+\item \href{https://toros.utrgv.edu/broker}{{\bf Astronomy broker website:}} A Django website to coordinate the assignment of observational targets for a night of observation between different observatories on the TOROS Network. (HTML, CSS, Javascript, Django, SQL ORM, Authentication backends) \href{https://toros.utrgv.edu/broker}{https://toros.utrgv.edu/broker}
+\item \href{https://github.com/toros-astro/astroalign}{{\bf Astroalign:}} A Python module for the alignment of two stellar images without World Coordinate System information. \href{https://github.com/toros-astro/astroalign}{https://github.com/toros-astro/astroalign}
+\item \href{https://github.com/toros-astro/ois}{{\bf OIS (Optimal Image Subtraction):}} A Python module with a C extension to find transient events on stellar images. Uses classic Difference Image Analysis techniques. \href{https://github.com/toros-astro/ois}{https://github.com/toros-astro/ois}
+\item {\bf Software pipeline} for reduction and analysis of astronomical images. Algorithms developed: Optimal Image Differencing and Machine Learning classifier. (Python, Django web app)
+\item \href{https://github.com/quatrope/AutoMix}{{\bf Refactoring of AutoMix:}} A C library for Reversible Jump MCMC Sampler with automatic proposal-distribution-fit developed by David Hastie. \href{https://github.com/quatrope/AutoMix}{https://github.com/quatrope/AutoMix}
+\item {\bf Bayesian analysis} to estimate the influence of calibration errors on LIGO gravitational wave data. (C++)
+\item {\bf Spectral Method} modeling algorithm to numerically solve a 2D helically-reduced wave equation on different geometries with mixed boundary conditions (Fortran algorithms added to a pre existing repository of spectral method routines, SVN, Mathematica). 
+\item \href{https://martinberoiz.org/2013/11/11/geodesic_calculator/}{{\bf Numerical integrator}} of time-like geodesics (light paths) around a rotating Kerr Black Hole. 3D representation of the geodesic using OpenGL in an interactive OS X GUI. (C, Objective-C, OpenGL) \href{https://martinberoiz.org/2013/11/11/geodesic_calculator/}{https://martinberoiz.org/2013/11/11/geodesic\_calculator}
+\item {\bf Prototype algorithm} for a real-time radio pulse detection, searching for ``dispersion measure'' signature in transient astronomical signals. (C, PGPLOT, FFTW, OpenMP)
 \end{itemize}
 
 
 \section*{Work experience}
 \begin{itemize}
-\item Assistant Research Scientist for the Center for Gravitational Wave Astronomy, University of Texas Rio Grande Valley. Oct 2017.
+\item Assistant Research Scientist for the Center for Gravitational Wave Astronomy, University of Texas Rio Grande Valley. Oct 2017-Present.
 \item System Administrator for the Department of Physics and Astronomy, University of Texas at Brownsville. Fall 2015
 \item System Administrator Assistant for the Department of Physics and Astronomy, University of Texas at Brownsville. 2013- Spring 2015
-% \item Member of the \href{http://wiki.phys.utb.edu/index.php/PhysicsComputingGroup}{Physics Computing Group} at University of Texas at Brownsville.
 \end{itemize}
 
 \section*{Publications}
 
 \begin{itemize}
+\item \href{https://www.sciencedirect.com/science/article/pii/S221313372030038X}{\bf Astroalign: A Python module for astronomical image registration}. (2020) M. Beroiz et al. \emph{Astronomy and Computing} Volume 32, July 2020, 100384.
 \item \href{http://doi.org/10.1093/mnras/stz3634}{ \bf TOROS Optical follow-up of the Advanced LIGO-VIRGO O2 second observational campaign}. (2019) Rodolfo Artola et al. \emph{Monthly Notices of the Royal Astronomical Society (MNRAS)} January 3, 2020.
 \item \href{https://www.sciencedirect.com/science/article/pii/S2213133718300982}{\bf Machine Learning on Difference Image Analysis: A comparison of methods for transient detection}. (2019) Bruno Sanchez et al. {\it Astronomy and Computing} Volume 28, July 2019, 100284.
 \item \href{https://arxiv.org/abs/1710.05844}{\bf Observations of the first electromagnetic counterpart to a gravitational wave source by the TOROS collaboration} (2017) M.C. Díaz et al. {\it The Astrophysical Journal Letters} Volume 848, Number 2.

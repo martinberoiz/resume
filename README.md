@@ -15,11 +15,11 @@ The following is a summary.
 
 ### Technical Skills
 
-* C, C++, Python, Objective-C, Bash Scripting, Fortran.
-* HTML, CSS, Javascript, Django, Apache, SQL databases.
-* Linux/OS X (Cocoa API) development.
-* OpenGL, PGPLOT, Gnuplot, Mathematica, Matlab, Maple.
-* SVN and Git version control.
+* Languages: C, C++, Python, Objective-C, Bash Scripting, Fortran.
+* Web Development: HTML, CSS, Javascript, Django, Apache, SQL databases.
+* Operating Systems: Linux servers, systemd background processes. OS X (Cocoa API) XCode devel- opment, OpenGL.
+* Dev Tools: SVN and Git version control. Continuous Integration testing with Travis-CI, Tox, Pytest. Sphinx Documentation.
+* Programs: Mathematica, Matlab, Maple.
 
 ### Algorithms developed
 
